@@ -1,0 +1,21 @@
+.cuadroPrincipal{
+    background-color: #ffffffe6;
+    width: 600px;
+}
+
+h1{
+    color: #344d67;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+h2{
+    color: #344d67;
+    font-size: 30px;
+    font-weight:500;
+}
+
+p{
+    text-align: center;
+    font-weight: 400;
+}

@@ -1,0 +1,21 @@
+nav{
+    padding: 30px;
+    background-color: #344D67;
+    color: #6ECCAF;
+    font-weight: 500;
+}
+
+h3{
+    padding: 40px 80px;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+li:hover{
+    background-color:#6ECCAF;
+    color: #344D67;
+    border-radius: 5px;
+}
