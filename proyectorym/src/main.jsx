@@ -4,11 +4,11 @@ import './index.css'
 import Home from './pages/Home/Home'
 import Characters from "./pages/Characters/Characters"
 import Contact from "./pages/Contact/Contact"
-// import RouteSite from "./routes.jsx"
+import RouteSite from "./routes.jsx"
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Contact/>
+    <RouteSite/>
   </StrictMode>,
 )

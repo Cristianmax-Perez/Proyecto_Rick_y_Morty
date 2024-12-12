@@ -8,9 +8,19 @@ export default function Card ({personaje}) {
             <div>
                 <img src={personaje.image}/>
                 <h2>{personaje.name}</h2>
-                <button onClick={()=>setOculto(false)}>Know More</button>              
+                <button onClick={()=>setOculto(false)} className={oculto?"btn btn-warning":"d-none"}>Know More</button>              
             </div>
-            {oculto===true ? "":<div><p>Mas info del personaje</p></div>} 
+            {oculto? "":
+            <div>
+                <button onClick={()=>setOculto(true)}>X</button>
+                <ul>
+                    <li>Character Status {personaje.status}</li>
+                    <li>Species {personaje.species}</li>
+                    <li>Origin {personaje.origin.name}</li>
+                    <li>Gender {personaje.gender}</li>
+                </ul>
+            </div>
+            }
         </div>
     )
 }

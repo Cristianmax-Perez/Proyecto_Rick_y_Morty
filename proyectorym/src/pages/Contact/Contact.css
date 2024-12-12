@@ -1,3 +1,13 @@
 .sectionContact{
-    background-color: rgba(92, 117, 146, .9)
+    background-color: rgba(92, 117, 146, .9);
+}
+
+
+textarea{
+    height: 250px;
+}
+
+#sendForm{
+    background-color: #344d67;
+    color: white;
 }

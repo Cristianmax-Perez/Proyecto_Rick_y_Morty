@@ -8,8 +8,8 @@ export default function RouteSite () {
         <Router>
             <Routes>
                 <Route path='/' element= {<Home/>} />
-                <Route path="/Characters" element= {<Characters/>}/>
-                <Route path="/Contact" element= {<Contact/>}/>
+                <Route path='/Characters' element= {<Characters/>}/>
+                <Route path='/Contact' element= {<Contact/>}/>
             </Routes>
         </Router>
     )

@@ -26,23 +26,26 @@ export default function ContactForm () {
         <Fragment>
             <Navigation/>
             <main>
-                <section className="sectionContact w-75 container mt-5 p-4 justify-content-center">
+                <section className="sectionContact w-75 h-75 container mt-5 p-4 justify-content-center">
                     <div className="text-center row">
                         <h2 className="py-4">Contact</h2>
                         <h3>Leave us your information so we can contact you</h3>
                     </div>
-                    <form className="row justify-content-center" action="">
-                        <div className="col-md-5">
+                    <form className="row justify-content-center p-4" action="">
+                        <div className="col-md-4 mb-3">
                             <label className="form-label" htmlFor="Name">Name</label>
                             <input className="form-control" type="text" id="Name" value={name} onInput={(event)=>InputFormulario(event.target)}/>
                         </div>
-                        <div className="col-md-5">
+                        <div className="col-md-4 mb-3">
                             <label className="form-label" htmlFor="Email">Email</label>
                             <input className="form-control" type="text" id="Email" value={email} onInput={(event)=>InputFormulario(event.target)}/>
                         </div>
-                        <div className="col-10">
+                        <div className="col-8">
                             <label className="form-label" htmlFor="Message">Message</label>
-                            <input className="form-control" type="text" id="Message" value={message} onInput={(event)=>InputFormulario(event.target)}/>
+                            <textarea className="form-control" id="Message" value={message} onInput={(event)=>InputFormulario(event.target)}/>
+                        </div>
+                        <div>
+                            <button type="submit" className="btn" id="sendForm">Send</button>
                         </div>
                     </form>
                 </section>

@@ -1,4 +1,4 @@
-import { useState } from "react" 
+import { useState, useEffect } from "react" 
 
 import Navigation from "../../components/Navigation/Navigation"
 import Card from "../../components/Card/Card"
@@ -15,11 +15,14 @@ export default function Characters () {
         console.log(datos)
     }
 
+    useEffect(()=>{
+        mostrarDatos();
+    },[])
+
     return (
         <div>
             <Navigation/>
             <h1>Characters</h1>
-            <button onClick={mostrarDatos}>Mostrar Info</button>
             <section className="d-flex flex-wrap gap-3">
             {
                 datos.map((personaje)=>{
