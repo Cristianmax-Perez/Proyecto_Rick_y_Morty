@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box; 
   background-image: url(./assets/rickymorty.jpg);
   background-size: cover;
   font-family: "Raleway", serif;

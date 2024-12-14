@@ -1,3 +1,9 @@
+:root{
+    --color-principal: #344D67;
+    --color-secundario: #6ECCAF;
+    --peso-fuente: 500;
+}
+
 .homePage{
     height: 100vh;
 }
@@ -7,19 +13,20 @@
     width: 600px;
 }
 
-h1{
-    color: #344d67;
+.tituloHome{
+    color: var(--color-principal);
     font-size: 42px;
-    font-weight: 500;
+    font-weight: var(--peso-fuente);
 }
 
 h2{
-    color: #344d67;
+    color: var(--color-principal);
     font-size: 30px;
-    font-weight:500;
+    font-weight: var(--peso-fuente);
 }
 
 p{
     text-align: center;
-    font-weight: 400;
+    color: var(--color-principal);
+    font-weight: var(--peso-fuente);
 }

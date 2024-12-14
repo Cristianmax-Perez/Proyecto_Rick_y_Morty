@@ -1,23 +1,33 @@
+:root{
+    --color-principal: #344D67;
+    --color-secundario: #6ECCAF;
+}
+
 nav{
     position: sticky;
     top: 0px;
-    padding: 30px;
-    background-color: #344D67;
+    padding: 20px;
+    height: 150px;
+    background-color: var(--color-principal);
     color: #6ECCAF;
     font-weight: 500;
 }
 
-h1{
+.botonNavHome{
     padding: 40px 80px;
     font-size: 20px;
+    color: var(--color-secundario);
 }
 
-li{
+ul{
     list-style: none;
 }
+.botonNav{
+    color: var(--color-secundario);
+}
 
-li:hover{
-    background-color:#6ECCAF;
-    color: #344D67;
+.botonNav:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
     border-radius: 5px;
 }

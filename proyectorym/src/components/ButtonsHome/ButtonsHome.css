@@ -1,8 +1,8 @@
-button{
-    color: #b1f0dc;
+.HomeButton{
+    color: #6eccaf;
     background-color: #344d67;
-    padding: 16px;
-    font-size: 18px;
+    width: 115px;
+    font-size: 16px;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 5px;
 }
