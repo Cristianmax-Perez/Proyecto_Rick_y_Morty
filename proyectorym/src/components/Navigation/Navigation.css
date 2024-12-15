@@ -1,16 +1,11 @@
-:root{
-    --color-principal: #344D67;
-    --color-secundario: #6ECCAF;
-}
-
 nav{
     position: sticky;
     top: 0px;
     padding: 20px;
     height: 150px;
     background-color: var(--color-principal);
-    color: #6ECCAF;
-    font-weight: 500;
+    color: var(--color-secundario);
+    font-weight: var(--peso-fuente);
 }
 
 .botonNavHome{
@@ -22,6 +17,7 @@ nav{
 ul{
     list-style: none;
 }
+
 .botonNav{
     color: var(--color-secundario);
 }
@@ -30,4 +26,18 @@ ul{
     background-color: var(--color-secundario);
     color: var(--color-principal);
     border-radius: 5px;
+}
+
+.xl{
+    display: none;
+}
+
+
+@media (min-width: 720px) {
+    .mobiles{
+        display: none;
+    }
+    .xl{
+        display: flex;
+    }
 }

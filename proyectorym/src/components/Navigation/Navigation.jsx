@@ -5,7 +5,8 @@ export default function Navigation () {
     return (
         <nav className="w-100 d-flex align-items-center justify-content-between">
             <h1><Link to="/" className="botonNavHome text-decoration-none">Rick & Morty</Link></h1>
-            <ul className="d-flex">
+            <button className="mobiles"><img src="src\assets\list.svg"></img></button>
+            <ul className="xl">
                 <li><Link to="/Characters" className="botonNav text-decoration-none p-2 m-2">Characters</Link></li>
                 <li><Link to="/Contact" className="botonNav text-decoration-none p-2 m-2">Contact</Link></li>
             </ul>

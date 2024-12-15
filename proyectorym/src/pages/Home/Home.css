@@ -19,7 +19,7 @@
     font-weight: var(--peso-fuente);
 }
 
-h2{
+.subtitulo{
     color: var(--color-principal);
     font-size: 30px;
     font-weight: var(--peso-fuente);

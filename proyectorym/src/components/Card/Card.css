@@ -1,0 +1,23 @@
+.tarjeta{
+    background-color: #223142;
+    color: var(--color-secundario);
+    box-sizing: content-box;
+    
+}
+
+.nameWidth{
+    width:300px;
+}
+.buttonCard{
+    background-color: var(--color-secundario);
+    color: #223142;
+}
+
+.listaAtributos{
+    width: 350px;
+    font-size: 21px;
+}
+
+.Atributo{
+    font-weight: 700;
+}

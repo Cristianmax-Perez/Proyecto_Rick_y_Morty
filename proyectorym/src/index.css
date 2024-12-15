@@ -1,6 +1,13 @@
+:root{
+  --color-principal: #344D67;
+  --color-secundario: #6ECCAF;
+  --peso-fuente: 500;
+}
+
 body {
   box-sizing: border-box; 
   background-image: url(./assets/rickymorty.jpg);
   background-size: cover;
+  background-attachment: fixed;
   font-family: "Raleway", serif;
 }
