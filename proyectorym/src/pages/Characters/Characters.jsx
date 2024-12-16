@@ -74,11 +74,13 @@ export default function Characters () {
         mostrarDatos();
     },[])
 
+    let [showFilterList, setShowFilterList]=useState(false)
+
     return (
         <div>
             <Navigation/>
             <main>
-                <section className="sectorFilterXL py-5 px-3">
+                <section className="sectorFilterXL d-none py-5 px-3">
                     <h2 className="subtitulo py-3">Filters</h2>
                     <div className="justify-content-between">
                         <form className="gap-2 d-flex justify-content-between flex-wrap">
@@ -92,9 +94,19 @@ export default function Characters () {
                 </section>
 
                 <section className="sectorFilterMobile m-3 p-3">
-                    <div className="FilterMobile d-flex justify-content-between">
-                        <h2 className="subtitulo py-3">Filters</h2>
-                        <button><img src="src\assets\filter-icon.svg"></img></button>
+                    <div className="FilterMobile rounded d-flex justify-content-between">
+                        <h2 className="p-3">Filters</h2>
+                        <img className="p-3" src="src\assets\filter-icon.svg" onClick={()=>setShowFilterList(!showFilterList)}></img>
+                    </div>
+
+                    <div className={showFilterList?"d-flex justify-content-center":"d-none"}>
+                        <form className="m-2 gap-2">
+                            {
+                                filterName.map((filtro)=>{
+                                return <Filters key={filtro} title={filtro} filtrar={filtrado}/>
+                                })
+                            }
+                        </form>
                     </div>
                 </section>
 

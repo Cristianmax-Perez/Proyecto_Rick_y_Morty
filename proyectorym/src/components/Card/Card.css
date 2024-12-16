@@ -21,3 +21,10 @@
 .Atributo{
     font-weight: 700;
 }
+
+@media (min-width:720px) {
+    .characterCard{
+        flex-direction: row !important;
+    }
+
+}

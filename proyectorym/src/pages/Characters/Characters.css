@@ -7,11 +7,11 @@
     color: var(--color-secundario);
 }
 
-@media (min-width:720px) {
+@media (min-width:768px) {
     .sectorFilterMobile {
         display: none;
     }
     .sectorFilterXL {
-        display: block;
+        display: block !important;
     }
 }
