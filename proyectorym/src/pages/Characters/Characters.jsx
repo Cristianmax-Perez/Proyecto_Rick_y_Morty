@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react" 
+import { useState, useEffect, Fragment } from "react" 
 import Filters from "../../components/Filters/Filters"
 import Navigation from "../../components/Navigation/Navigation"
 import Card from "../../components/Card/Card"
@@ -6,10 +6,10 @@ import Card from "../../components/Card/Card"
 import "../../pages/Characters/Characters.css"
 
 export default function Characters () {
+    
     let [datos,setDatos]=useState([])
     let [datosCompletos,setDatosCompletos]=useState([])
     let [filtrosAplicados,setFiltrosAplicados]=useState([])
-    let [show,setShow]=useState(true)
 
     let filterName=["Character Alive","Character Dead","Female","Male","Origin Unknown"]
 
@@ -77,7 +77,7 @@ export default function Characters () {
     let [showFilterList, setShowFilterList]=useState(false)
 
     return (
-        <div>
+        <Fragment>
             <Navigation/>
             <main>
                 <section className="sectorFilterXL d-none py-5 px-3">
@@ -110,7 +110,7 @@ export default function Characters () {
                     </div>
                 </section>
 
-                <section className="d-flex flex-wrap gap-3 justify-content-center">
+                <section className="d-flex flex-wrap gap-3 justify-content-center m-3">
                 {
                     datos.length !==0?
                     datos.map((personaje)=>{
@@ -121,6 +121,6 @@ export default function Characters () {
                 }    
                 </section>
             </main>
-        </div>
+        </Fragment>
     )
 }

@@ -2,12 +2,13 @@
     background-color: #223142;
     color: var(--color-secundario);
     box-sizing: content-box;
-    
+    /* height: fit-content; */
 }
 
 .nameWidth{
     width:300px;
 }
+
 .buttonCard{
     background-color: var(--color-secundario);
     color: #223142;
@@ -27,12 +28,16 @@
     font-weight: 700;
 }
 
-@media (min-width:720px) {
+@media (min-width:680px) {
+
     .characterCard{
         flex-direction: row !important;
     }
+}
+
+@media (min-width:768px) {
+
     .listaAtributos{
         width:350px;
     }
-
 }

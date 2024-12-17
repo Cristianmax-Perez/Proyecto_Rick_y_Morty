@@ -25,7 +25,7 @@ export default function ContactForm () {
     return(
         <Fragment>
             <Navigation/>
-            <main>
+            <main className="my-3">
                 <section className="sectionContact w-75 h-75 container mt-5 p-3 d-flex flex-column justify-content-center">
                     <div className="text-center row">
                         <h2 className="py-4">Contact</h2>
