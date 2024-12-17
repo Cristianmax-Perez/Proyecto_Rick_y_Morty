@@ -1,8 +1,13 @@
 .HomeButton{
-    color: #6eccaf;
-    background-color: #344d67;
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
     width: 115px;
     font-size: 16px;
     font-weight: 500;
     border-radius: 5px;
+}
+
+.HomeButton:hover{
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
 }

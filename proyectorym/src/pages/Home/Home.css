@@ -1,13 +1,3 @@
-:root{
-    --color-principal: #344D67;
-    --color-secundario: #6ECCAF;
-    --peso-fuente: 500;
-}
-
-.homePage{
-    height: 100vh;
-}
-
 .cuadroPrincipal{
     background-color: #ffffffe6;
     width: 600px;
@@ -15,13 +5,7 @@
 
 .tituloHome{
     color: var(--color-principal);
-    font-size: 42px;
-    font-weight: var(--peso-fuente);
-}
-
-.subtitulo{
-    color: var(--color-principal);
-    font-size: 30px;
+    font-size: 32px;
     font-weight: var(--peso-fuente);
 }
 
@@ -29,4 +13,19 @@ p{
     text-align: center;
     color: var(--color-principal);
     font-weight: var(--peso-fuente);
+}
+
+@media (min-width:768px) {
+    .homePage{
+        height: 100vh;
+    }
+}
+
+@media (min-width:425px) {
+    .tituloHome {
+        font-size: 40px;
+    }
+    .subtitulo {
+        font-size: 30px;
+    }
 }

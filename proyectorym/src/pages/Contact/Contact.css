@@ -2,6 +2,9 @@
     background-color: rgba(92, 117, 146, .9);
 }
 
+.formContact {
+    width: 800px;
+}
 
 textarea{
     height: 250px;

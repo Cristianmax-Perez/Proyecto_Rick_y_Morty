@@ -15,10 +15,10 @@ export default function Card ({personaje}) {
             <div className="d-inline-flex flex-column p-5 algin-items-center">
                 <button className="btn buttonCard align-self-end" onClick={()=>setOculto(true)}>X</button>
                 <ul className="listaAtributos p-3 text-white">
-                    <li className="d-flex p-1 flex-column Atributo">Character Status {personaje.status}</li>
-                    <li className="d-flex p-1 flex-column">Species <span className="Atributo">{personaje.species}</span></li>
-                    <li className="d-flex p-1 flex-column">Origin <span className="Atributo">{personaje.origin.name}</span></li>
-                    <li className="d-flex p-1 flex-column">Gender <span className="Atributo">{personaje.gender}</span></li>
+                    <li className="Atributo d-flex p-2 flex-column TituloAtributo">Character Status {personaje.status}</li>
+                    <li className="Atributo d-flex p-2 flex-column">Species <span className="TituloAtributo">{personaje.species}</span></li>
+                    <li className="Atributo d-flex p-2 flex-column">Origin <span className="TituloAtributo">{personaje.origin.name}</span></li>
+                    <li className="Atributo d-flex p-2 flex-column">Gender <span className="TituloAtributo">{personaje.gender}</span></li>
                 </ul>
             </div>
             }

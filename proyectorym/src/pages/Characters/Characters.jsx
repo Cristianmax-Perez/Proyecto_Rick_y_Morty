@@ -117,7 +117,7 @@ export default function Characters () {
                         return <Card key={personaje.id} personaje={personaje}/>
                     })
                     :
-                    <p className="alert bg-success">Sorry! There are no characters with all those properties.</p>
+                    <p className="ErrorMessage rounded px-5 py-2"><img src="src\assets\exclamation-triangle-fill.svg"></img> Sorry! There are no characters with all those properties.</p>
                 }    
                 </section>
             </main>

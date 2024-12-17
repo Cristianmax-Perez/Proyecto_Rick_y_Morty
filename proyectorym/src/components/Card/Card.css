@@ -13,18 +13,26 @@
     color: #223142;
 }
 
+.Atributo:hover {
+    color: var(--color-principal);
+    background-color: var(--color-secundario);
+}
+
 .listaAtributos{
-    width: 350px;
+    width: 200px;
     font-size: 21px;
 }
 
-.Atributo{
+.TituloAtributo{
     font-weight: 700;
 }
 
 @media (min-width:720px) {
     .characterCard{
         flex-direction: row !important;
+    }
+    .listaAtributos{
+        width:350px;
     }
 
 }

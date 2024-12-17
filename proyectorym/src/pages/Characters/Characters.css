@@ -7,6 +7,11 @@
     color: var(--color-secundario);
 }
 
+.ErrorMessage {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
 @media (min-width:768px) {
     .sectorFilterMobile {
         display: none;

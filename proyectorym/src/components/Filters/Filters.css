@@ -4,3 +4,11 @@
     font-weight: var(--peso-fuente);
     border-radius: 10px;
 }
+
+.pulsador {
+    background-color: var(--color-secundario);
+}
+
+.pulsador:checked {
+    background-color: black;
+}
