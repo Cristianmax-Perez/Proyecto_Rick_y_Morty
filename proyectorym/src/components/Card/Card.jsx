@@ -9,11 +9,11 @@ export default function Card ({personaje}) {
             <div className="d-flex flex-column">
                 <img src={personaje.image}/>
                 <h2 className="nameWidth text-wrap text-center">{personaje.name}</h2>
-                <button onClick={()=>setOculto(false)} className={oculto?"btn buttonCard align-self-end":"d-none"}>Know More..</button>              
+                <button id="KnowMore" onClick={()=>setOculto(false)} className={oculto?"btn buttonCard align-self-end":"d-none"}>Know More..</button>              
             </div>
             {oculto? "":
-            <div className="panel d-inline-flex flex-column p-5 algin-items-center">
-                <button className="btn buttonCard align-self-end" onClick={()=>setOculto(true)}>X</button>
+            <div className=" d-inline-flex flex-column p-5 align-items-center">
+                <button id="CloseX" className="btn buttonCard align-self-end" onClick={()=>setOculto(true)}>X</button>
                 <ul className="listaAtributos p-3 text-white">
                     <li className="Atributo d-flex p-2 flex-column TituloAtributo">Character Status {personaje.status}</li>
                     <li className="Atributo d-flex p-2 flex-column">Species <span className="TituloAtributo">{personaje.species}</span></li>
@@ -23,5 +23,5 @@ export default function Card ({personaje}) {
             </div>
             }
         </div>
-    )
-}
+    ) 
+} 

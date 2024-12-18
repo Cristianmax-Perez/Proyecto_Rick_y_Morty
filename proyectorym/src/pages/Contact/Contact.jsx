@@ -22,6 +22,12 @@ export default function ContactForm () {
         }
     }
 
+    /*
+    console.log(name)
+    console.log(email)
+    console.log(message)
+    */
+   
     return(
         <Fragment>
             <Navigation/>
