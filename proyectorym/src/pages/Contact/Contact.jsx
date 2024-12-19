@@ -30,9 +30,13 @@ export default function ContactForm () {
    
     return(
         <Fragment>
+
             <Navigation pageName={"Contact"}/>
+
             <main className="my-3">
+
                 <section className="sectionContact h-75 container mt-5 p-3 d-flex flex-column justify-content-center">
+                    
                     <div className="text-center row">
                         <h2 className="py-4">Contact</h2>
                         <h3 className="subtituloContact">Leave us your information so we can contact you</h3>
@@ -53,12 +57,15 @@ export default function ContactForm () {
                                 <textarea className="form-control" id="Message" value={message} onInput={(event)=>InputFormulario(event.target)}/>
                             </div>
                             <div className="py-4">
-                                <button type="submit" className="btn" id="sendForm">Send</button>
+                                <button type="submit" className="btn text-white" id="sendForm" value="send">Send</button>
                             </div>
                         </form>
                     </div>
+                    
                 </section>
+
             </main>
+
         </Fragment>
     )         
 }

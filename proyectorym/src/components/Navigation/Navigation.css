@@ -12,6 +12,7 @@ nav{
 
 .botonNavHome{
     font-size: 20px;
+    font-weight: var(--peso-fuente);
     color: var(--color-secundario);
 }
 
@@ -43,28 +44,26 @@ ul{
 }
 
 @media (min-width:425px) {
+
     .barraNav {
         height: 120px;
     }
 } 
 
+
 @media (min-width:768px) {
+
     .barraNav {
         padding: 0px 60px;
     }
 }
 
-@media (min-width: 1024px) {
-    /*
-    .botonNavHome {
-        padding: 40px 80px !important;
 
-    }
-    */
+@media (min-width: 1024px) {
+    
     .mobiles{
         display: none;
     }
-    
     .xl{
         display: flex !important;
     }

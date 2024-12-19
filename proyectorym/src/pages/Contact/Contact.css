@@ -16,8 +16,7 @@ textarea{
 }
 
 #sendForm{
-    background-color: #344d67;
-    color: white;
+    background-color: var(--color-principal);
 }
 
 @media (min-width: 500px) {
@@ -34,6 +33,6 @@ textarea{
 @media (min-width: 1024px) {
 
     .subtituloContact {
-        font-size: 30px;
+        font-size: 28px;
     }
 }

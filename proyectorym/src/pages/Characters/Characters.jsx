@@ -96,7 +96,7 @@ export default function Characters () {
                 <section className="sectorFilterMobile m-3 p-3">
                     <div className="FilterMobile rounded container d-flex justify-content-evenly">
                         <h2 className="p-3">Filters</h2>
-                        <img className="p-3" src="src\assets\filter-icon.svg" onClick={()=>setShowFilterList(!showFilterList)}></img>
+                        <img className="p-3" alt="Filter Menu" src="src\assets\filter-icon.svg" onClick={()=>setShowFilterList(!showFilterList)}></img>
                     </div>
 
                     <div className={showFilterList?"d-flex justify-content-center":"d-none"}>
