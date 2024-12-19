@@ -12,8 +12,3 @@ body {
   font-family: "Raleway", serif;
 }
 
-.subtitulo {
-  color: var(--color-principal);
-  font-size: 24px;
-  font-weight: var(--peso-fuente);
-}

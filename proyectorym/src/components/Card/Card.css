@@ -4,19 +4,15 @@
     box-sizing: content-box;
 }
 
-.nameWidth{
-    width:300px;
+.nameCharacter {
+    width: 300px;
+    height: 70px;
 }
 
 .buttonCard{
     background-color: var(--color-secundario);
     color: #223142;
 }
-/*
-#CloseX{
-    position: relative;
-    bottom: 200px;
-}*/
 
 .Atributo:hover {
     color: var(--color-principal);
@@ -24,7 +20,7 @@
 }
 
 .listaAtributos{
-    width: 200px;
+    width: 270px;
     font-size: 21px;
 }
 
@@ -34,14 +30,13 @@
 
 @media (min-width:680px) {
 
+    .frontCard {
+        height: 430px;
+    } 
     .characterCard{
         flex-direction: row !important;
     }
-}
-
-@media (min-width:768px) {
-
     .listaAtributos{
-        width:350px;
+        width: 292px;
     }
 }

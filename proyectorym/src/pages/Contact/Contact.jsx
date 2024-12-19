@@ -30,12 +30,12 @@ export default function ContactForm () {
    
     return(
         <Fragment>
-            <Navigation/>
+            <Navigation pageName={"Contact"}/>
             <main className="my-3">
-                <section className="sectionContact w-75 h-75 container mt-5 p-3 d-flex flex-column justify-content-center">
+                <section className="sectionContact h-75 container mt-5 p-3 d-flex flex-column justify-content-center">
                     <div className="text-center row">
                         <h2 className="py-4">Contact</h2>
-                        <h3>Leave us your information so we can contact you</h3>
+                        <h3 className="subtituloContact">Leave us your information so we can contact you</h3>
                     </div>
 
                     <div className="d-flex justify-content-center">

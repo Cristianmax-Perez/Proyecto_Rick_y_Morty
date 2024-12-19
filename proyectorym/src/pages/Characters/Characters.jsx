@@ -78,10 +78,10 @@ export default function Characters () {
 
     return (
         <Fragment>
-            <Navigation/>
+            <Navigation pageName={"Characters"}/>
             <main>
                 <section className="sectorFilterXL d-none py-5 px-3">
-                    <h2 className="subtitulo py-3">Filters</h2>
+                    <h2 className="subtituloFilter py-2">Filters</h2>
                     <div className="justify-content-between">
                         <form className="gap-2 d-flex justify-content-between flex-wrap">
                             {
@@ -94,7 +94,7 @@ export default function Characters () {
                 </section>
 
                 <section className="sectorFilterMobile m-3 p-3">
-                    <div className="FilterMobile rounded d-flex justify-content-between">
+                    <div className="FilterMobile rounded container d-flex justify-content-evenly">
                         <h2 className="p-3">Filters</h2>
                         <img className="p-3" src="src\assets\filter-icon.svg" onClick={()=>setShowFilterList(!showFilterList)}></img>
                     </div>

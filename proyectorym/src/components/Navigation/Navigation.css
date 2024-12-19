@@ -1,10 +1,13 @@
 nav{
     position: sticky;
     top: 0px;
-    padding: 20px;
     background-color: var(--color-principal);
     color: var(--color-secundario);
     font-weight: var(--peso-fuente);
+}
+
+.barraNav {
+    height: 80px;
 }
 
 .botonNavHome{
@@ -15,6 +18,15 @@ nav{
 ul{
     list-style: none;
 }
+
+.pageActive {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
 
 .botonNav{
     color: var(--color-secundario);
@@ -30,13 +42,25 @@ ul{
     display: none;
 }
 
-
-@media (min-width: 768px) {
-    
-    .botonNavHome {
-        padding: 40px 80px !important
+@media (min-width:425px) {
+    .barraNav {
+        height: 120px;
     }
+} 
 
+@media (min-width:768px) {
+    .barraNav {
+        padding: 0px 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*
+    .botonNavHome {
+        padding: 40px 80px !important;
+
+    }
+    */
     .mobiles{
         display: none;
     }
@@ -44,4 +68,5 @@ ul{
     .xl{
         display: flex !important;
     }
+    
 }

@@ -1,9 +1,14 @@
 .sectionContact{
     background-color: rgba(92, 117, 146, .9);
+    width: 95vw;
 }
 
 .formContact {
     width: 800px;
+}
+
+.subtituloContact {
+    font-size: 18px;
 }
 
 textarea{
@@ -13,4 +18,22 @@ textarea{
 #sendForm{
     background-color: #344d67;
     color: white;
+}
+
+@media (min-width: 500px) {
+
+    .sectionContact {
+        width: 75vw;
+    }
+    .subtituloContact {
+        font-size: 24px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .subtituloContact {
+        font-size: 30px;
+    }
 }
